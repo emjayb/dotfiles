@@ -1,5 +1,0 @@
-import readline
-import numpy as np
-import sympy as sym
-#readline.set_auto_history(False)
-readline.write_history_file = lambda *args: None
