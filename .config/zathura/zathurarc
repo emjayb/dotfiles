@@ -1,0 +1,14 @@
+# open zathura with horizontal fit, without gui, and invert colors
+set adjust-open "width"
+set guioptions 0
+set recolor
+
+# replace $HOME with tilde
+set statusbar-home-tilde true
+
+# use system clipboard for copying
+set selection-clipboard clipboard
+set selection-notification false
+
+# keep more pages in cache (defaults to 15)
+set page-cache-size 60
