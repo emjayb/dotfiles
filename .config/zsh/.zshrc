@@ -94,6 +94,7 @@ alias cfr="vim $XDG_CONFIG_HOME/ranger/rc.conf"
 alias cft="vim $XDG_CONFIG_HOME/tmux/tmux.conf"
 alias cfp="vim $XDG_CONFIG_HOME/zsh/.zprofile"
 alias cfw="vim $XDG_CONFIG_HOME/waybar/config"
+alias cfq="vim $XDG_CONFIG_HOME/qutebrowser/config.py"
 
 # docs
 alias cv="cd $HOME/docs/business/cv && vim cv.tex"
