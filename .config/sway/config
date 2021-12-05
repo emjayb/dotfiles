@@ -191,6 +191,7 @@ bindsym $mod+0 exec betterlockscreen -s
 bindsym $mod+F3 exec kitty -e ranger
 bindsym $mod+F4 exec bluetoothctl power on
 bindsym $mod+F8 exec kitty -e ncmpcpp
+bindsym $mod+Ctrl+Space exec dmenunicode
 bindsym --release Print exec i3-scrot --desk
 bindsym --release $mod+Print exec i3-scrot --window
 bindsym --release $mod+shift+Print exec i3-scrot --select

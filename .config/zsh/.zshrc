@@ -11,6 +11,10 @@ promptinit
 prompt redhat
 zshaddhistory() { whence ${${(z)1}[1]} >| /dev/null || return 1 }
 
+autoload bashcompinit
+bashcompinit
+eval "$(register-python-argcomplete pmbootstrap)"
+
 # Selfmade stuff
 export GPG_TTY=$(tty)
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djdk.gtk.version=3'
@@ -107,7 +111,7 @@ alias hf="history | fzf"
 alias syexd="rsync -ah --progress --del --append $HOME/ /run/media/$(whoami)/exd/recent/"
 alias syhdd="rsync -ah --progress --del --append $HOME/ /run/media/$(whoami)/hdd/recent/"
 alias thumb="convert -colorspace sRGB -alpha remove -background white -density 150"
-alias gscom="gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH" # don't forget -sOutputFile=output.pdf input.pdf
+alias gscom="gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compress.pdf" # input.pdf
 alias sway="export QT_QPA_PLATFORM=wayland && export QT_QPA_PLATFORMTHEME=qt5ct && export BROWSER=qutebrowser && sway --my-next-gpu-wont-be-nvidia"
 alias pd="pomodoro"
 alias zaz="yay"
